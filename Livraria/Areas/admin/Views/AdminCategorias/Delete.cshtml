@@ -1,0 +1,35 @@
+﻿@model Livraria.Models.Categoria
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Excluir</h1>
+
+
+<div>
+    <h4>Categoria</h4>
+    <br />
+    <h3>Tem certeza que deseja excluir?</h3>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CategoriaNome)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CategoriaNome)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="CategoriaId" />
+        <input type="submit" value="Excluir" class="btn btn-danger" /> |
+        <a class="btn btn-secondary" asp-action="Index">Voltar para a lista</a>
+    </form>
+</div>

@@ -1,0 +1,90 @@
+﻿@model ReflectionIT.Mvc.Paging.PagingList<Livraria.Models.Livro>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Livros</h1>
+
+<form method="get" class="form-inline">
+    <input name="filter" class="form-control" placeholder="Buscar livros"
+           value="@Model.RouteValue["Filter"]" />
+
+    <button type="submit" class="btn btn-primary">
+        <span class="glyphicon-search" aria-hidden="true"></span>Buscar
+    </button>
+
+</form>
+
+
+<p>
+    <a class="btn btn-success"  asp-action="Create">Adicionar</a>
+</p>
+<div class="row">
+    <div class="col-md-10">
+        <table class="table ">
+  
+    <thead >
+        <tr  >
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Autor)
+            </th>
+           
+            <th>
+                @Html.DisplayNameFor(model => model.Preco)
+            </th>
+           
+            <th>
+                @Html.DisplayNameFor(model => model.LivroFavorito)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Disponivel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Categoria)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+            <tr >
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Autor)
+            </td>
+           
+            <td>
+                @Html.DisplayFor(modelItem => item.Preco)
+            </td>
+           
+            <td>
+                @Html.DisplayFor(modelItem => item.LivroFavorito)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Disponivel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Categoria.CategoriaNome)
+            </td>
+            <td>
+                <a class="btn btn-warning"  asp-action="Edit" asp-route-id="@item.LivroId">Editar</a> |
+                <a class="btn btn-info" asp-action="Details" asp-route-id="@item.LivroId">Detalhes</a> |
+                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.LivroId">Excluir</a>
+            </td>
+        </tr>
+}
+    </tbody>
+        </table>
+    </div>
+</div>
+Total de produtos:@Model.TotalRecordCount
+<br />
+<nav>
+    @await this.Component.InvokeAsync("Pager", new { pagingList = this.Model })
+</nav>

@@ -1,0 +1,63 @@
+﻿@model CarrinhoCompraViewModel
+
+<div class="container">
+    <div class="row">
+        <div class="text-center">
+            <img src="~/images/livros.png" height="100" width="100" />
+        </div>
+        <div>
+            <h4>Sua lista de compras :</h4>
+        </div>
+
+        <table class="table table-bordered table-striped">
+
+            <thead>
+                <tr>
+                    <th>Quantidade</th>
+                    <th>Produto</th>
+                    <th class="text-right">Preço</th>
+                    <th class="text-right">Subtotal</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var item in Model.CarrinhoCompra.CarrinhoCompraItems)
+                {
+                    <tr>
+                        <td class="text-center">@item.Quantidade</td>
+                        <td class="text-left">@item.Livro.Nome</td>
+                        <td class="text-right">@item.Livro.Preco.ToString("c")</td>
+
+                        <td class="text-right">
+                            @((item.Quantidade * item.Livro.Preco).ToString("c"))
+                        </td>
+
+                        <td class="text-center">
+                            <a asp-controller="CarrinhoCompra" asp-action="RemoverItemDoCarrinhoCompra"
+                           asp-route-LivroId="@item.Livro.LivroId">
+                                <img src="~/images/lata-de-lixo.png" widht="20" height="20" />
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" class="text-right">Total</td>
+                    <td class="text-right">
+                        @Model.CarrinhoCompraTotal.ToString("c")
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <div class="text-right">
+            <div class="btn-group">
+                <a class="btn btn-sucess" asp-controller="Pedido" asp-action="Checkout">Concluir pedido</a>
+                &nbsp;&nbsp;&nbsp;
+                <a class="btn btn-primary" asp-controller="Livro" asp-action="List">Continuar procurando</a>
+            </div>
+        </div>
+    </div>
+</div>
