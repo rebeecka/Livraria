@@ -3,7 +3,7 @@
 <div class="container">
     <div class="row">
         <div class="text-center">
-            <img src="~/images/livros.png" height="100" width="100" />
+            <img src="~/images/lendo-um-livro.png" height="100" width="100" />
         </div>
         <div>
             <h4>Sua lista de compras :</h4>
@@ -13,10 +13,10 @@
 
             <thead>
                 <tr>
-                    <th>Quantidade</th>
-                    <th>Produto</th>
-                    <th class="text-right">Preço</th>
-                    <th class="text-right">Subtotal</th>
+                    <th class="text-center">Quantidade</th>
+                    <th class="text-center">Produto</th>
+                    <th class="text-center">Preço</th>
+                    <th class="text-center">Subtotal</th>
                     <th></th>
                 </tr>
             </thead>
@@ -44,7 +44,7 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <td colspan="3" class="text-right">Total</td>
+                    <td colspan="3" class="text-right"><strong>Total</strong></td>
                     <td class="text-right">
                         @Model.CarrinhoCompraTotal.ToString("c")
                     </td>

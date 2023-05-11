@@ -14,6 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="%24RRB8O7Y.cs" />
     <Compile Remove="Views\Shared\_LoginPartial.cshtml.cs" />
   </ItemGroup>
 
@@ -32,9 +33,6 @@
     <None Include="Areas\admin\Views\AdminCategorias\Details.cshtml" />
     <None Include="Areas\admin\Views\AdminCategorias\Edit.cshtml" />
     <None Include="Areas\admin\Views\AdminCategorias\Index.cshtml" />
-    <None Include="Areas\admin\Views\AdminImagens\GetImagens.cshtml" />
-    <None Include="Areas\admin\Views\AdminImagens\Index.cshtml" />
-    <None Include="Areas\admin\Views\AdminImagens\UploadFiles.cshtml" />
     <None Include="Areas\admin\Views\AdminPedidos\Create.cshtml" />
     <None Include="Areas\admin\Views\AdminPedidos\Delete.cshtml" />
     <None Include="Areas\admin\Views\AdminPedidos\Details.cshtml" />
@@ -48,7 +46,6 @@
     <None Include="Areas\admin\Views\Shared\_Layout.cshtml" />
     <None Include="Areas\admin\Views\_ViewImports.cshtml" />
     <None Include="Areas\admin\Views\_ViewStart.cshtml" />
-    <None Include="Views\Account\AccessDenied.cshtml" />
     <None Include="Views\Account\Login.cshtml" />
     <None Include="Views\Account\Register.cshtml" />
     <None Include="wwwroot\js\site.js" />
@@ -94,6 +91,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="FastReport.OpenSource" Version="2023.2.12" />
+    <PackageReference Include="FastReport.OpenSource.Data.MySql" Version="2021.4.0" />
+    <PackageReference Include="FastReport.OpenSource.Export.PdfSimple" Version="2023.2.12" />
+    <PackageReference Include="FastReport.OpenSource.Web" Version="2023.2.12" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.15" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.4">
       <PrivateAssets>all</PrivateAssets>
@@ -104,13 +105,14 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.13" />
     <PackageReference Include="ReflectionIT.Mvc.Paging" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Areas\admin\Data\" />
     <Folder Include="Areas\admin\Models\" />
-    <Folder Include="wwwroot\images\produtos\" />
+    <Folder Include="wwwroot\reports\" />
   </ItemGroup>
 
 </Project>

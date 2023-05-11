@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-faded border-bottom box-shadow mb-3" style="background-color: #32CD32">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Livraria</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -18,14 +18,14 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex ">
-                    <a class="nav-link text-dark" asp-area="Admin" asp-controller="Admin" asp-action="Index">Home</a>
+                    <a class="nav-link text-dark" asp-area="Admin" asp-controller="Admin" asp-action="Index">Página inicial</a>
                     <a class="nav-link text-dark" asp-area="Admin" asp-controller="AdminLivros" asp-action="Index">Livros</a>
                     <a class="nav-link text-dark" asp-area="Admin" asp-controller="AdminCategorias" asp-action="Index">Categorias</a>
                     <a class="nav-link text-dark" asp-area="Admin" asp-controller="AdminPedidos" asp-action="Index">Pedidos</a>
                     <a class="nav-link text-dark" asp-area="Admin" asp-controller="AdminRelatorioVendas" asp-action="Index">Relatório vendas</a>
 
                     <div class="dropdown">
-                        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                             Gráficos de vendas
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -34,7 +34,7 @@
                             <a class="dropdown-item" asp-area="Admin" asp-controller="AdminGrafico" asp-action="VendasSemanal" asp-route-dias="7">Venda semanal</a>
                         </div>
                     </div>
-                    <a class="nav-link text-dark" asp-area="Admin" asp-controller="AdminImagens" asp-action="Index">Gerenciar imagens</a>
+                   
                 </div>
             </div>
         </nav>

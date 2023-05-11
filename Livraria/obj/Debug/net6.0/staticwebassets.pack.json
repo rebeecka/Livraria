@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\images\\acesso-negado.png"
     },
     {
+      "Id": "C:\\Users\\rebec\\source\\repos\\Livraria\\Livraria\\wwwroot\\images\\atendimento-ao-cliente.png",
+      "PackagePath": "staticwebassets\\images\\atendimento-ao-cliente.png"
+    },
+    {
       "Id": "C:\\Users\\rebec\\source\\repos\\Livraria\\Livraria\\wwwroot\\images\\banner.png",
       "PackagePath": "staticwebassets\\images\\banner.png"
     },
@@ -31,6 +35,10 @@
     {
       "Id": "C:\\Users\\rebec\\source\\repos\\Livraria\\Livraria\\wwwroot\\images\\cancelar.png",
       "PackagePath": "staticwebassets\\images\\cancelar.png"
+    },
+    {
+      "Id": "C:\\Users\\rebec\\source\\repos\\Livraria\\Livraria\\wwwroot\\images\\carrinho-de-compras.png",
+      "PackagePath": "staticwebassets\\images\\carrinho-de-compras.png"
     },
     {
       "Id": "C:\\Users\\rebec\\source\\repos\\Livraria\\Livraria\\wwwroot\\images\\conjunto-vazio.png",
@@ -65,12 +73,20 @@
       "PackagePath": "staticwebassets\\images\\lata-de-lixo.png"
     },
     {
+      "Id": "C:\\Users\\rebec\\source\\repos\\Livraria\\Livraria\\wwwroot\\images\\lendo-um-livro.png",
+      "PackagePath": "staticwebassets\\images\\lendo-um-livro.png"
+    },
+    {
       "Id": "C:\\Users\\rebec\\source\\repos\\Livraria\\Livraria\\wwwroot\\images\\mapas-e-bandeiras.png",
       "PackagePath": "staticwebassets\\images\\mapas-e-bandeiras.png"
     },
     {
       "Id": "C:\\Users\\rebec\\source\\repos\\Livraria\\Livraria\\wwwroot\\images\\o-email.png",
       "PackagePath": "staticwebassets\\images\\o-email.png"
+    },
+    {
+      "Id": "C:\\Users\\rebec\\source\\repos\\Livraria\\Livraria\\wwwroot\\images\\pilha-de-livros.png",
+      "PackagePath": "staticwebassets\\images\\pilha-de-livros.png"
     },
     {
       "Id": "C:\\Users\\rebec\\source\\repos\\Livraria\\Livraria\\wwwroot\\js\\site.js",
@@ -303,6 +319,10 @@
     {
       "Id": "C:\\Users\\rebec\\source\\repos\\Livraria\\Livraria\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\rebec\\source\\repos\\Livraria\\Livraria\\wwwroot\\reports\\LivrosCategoria.frx",
+      "PackagePath": "staticwebassets\\reports\\LivrosCategoria.frx"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Livraria.Microsoft.AspNetCore.StaticWebAssets.props",

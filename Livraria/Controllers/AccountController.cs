@@ -1,4 +1,5 @@
-﻿using Livraria.ViewModels;
+﻿
+using Livraria.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -72,7 +73,7 @@ namespace Livraria.Controllers
 
                 if (result.Succeeded)
                 {
-                   
+                    
                     await _userManager.AddToRoleAsync(user, "Member");
                     return RedirectToAction("Login", "Account");
                 }

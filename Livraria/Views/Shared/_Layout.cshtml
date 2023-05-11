@@ -10,9 +10,11 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-faded border-bottom box-shadow mb-3" style="background-color: #32CD32">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Livraria - Leitura em foco</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/images/pilha-de-livros.png" width="50" height="50"/>
+                    Livraria - Leitura em foco</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -22,9 +24,6 @@
                     @await Component.InvokeAsync("CarrinhoCompraResumo")
                     @await Component.InvokeAsync("CategoriaMenu")
 
-
-
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Livro" asp-action="List">Livros</a>
 
                     <a class="nav-link text-dark" asp-area="" asp-controller="Contato" asp-action="Index">Contato</a>
 
@@ -36,7 +35,7 @@
                     @await Html.PartialAsync("_LoginPartial")
                     @if (User.IsInRole("Admin"))
                     {
-                        <a class="nav-link text-dark" asp-area="Admin" asp-controller="Admin" asp-action="Index">Admin</a>
+                        <a class="nav-link text-dark" asp-area="Admin" asp-controller="Admin" asp-action="Index">Administração</a>
                     }
 
                 </div>
@@ -49,11 +48,8 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - Livraria - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
+   <partial name="_Footer" />
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZuAsK4lufbNHGB/CojjhX8Jo7500ZVOLuLljiJ6kIZI=",
+  "Hash": "3Z8ccWS2MZ4GR6jjSfTpvzCF/uGAYADEZs1t4RYD1l4=",
   "Source": "Livraria",
   "BasePath": "_content/Livraria",
   "Mode": "Default",
@@ -102,6 +102,23 @@
       "OriginalItemSpec": "wwwroot\\images\\acesso-negado.png"
     },
     {
+      "Identity": "C:\\Users\\rebec\\source\\repos\\Livraria\\Livraria\\wwwroot\\images\\atendimento-ao-cliente.png",
+      "SourceId": "Livraria",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\rebec\\source\\repos\\Livraria\\Livraria\\wwwroot\\",
+      "BasePath": "_content/Livraria",
+      "RelativePath": "images/atendimento-ao-cliente.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\atendimento-ao-cliente.png"
+    },
+    {
       "Identity": "C:\\Users\\rebec\\source\\repos\\Livraria\\Livraria\\wwwroot\\images\\banner.png",
       "SourceId": "Livraria",
       "SourceType": "Discovered",
@@ -168,6 +185,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\cancelar.png"
+    },
+    {
+      "Identity": "C:\\Users\\rebec\\source\\repos\\Livraria\\Livraria\\wwwroot\\images\\carrinho-de-compras.png",
+      "SourceId": "Livraria",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\rebec\\source\\repos\\Livraria\\Livraria\\wwwroot\\",
+      "BasePath": "_content/Livraria",
+      "RelativePath": "images/carrinho-de-compras.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\carrinho-de-compras.png"
     },
     {
       "Identity": "C:\\Users\\rebec\\source\\repos\\Livraria\\Livraria\\wwwroot\\images\\conjunto-vazio.png",
@@ -306,6 +340,23 @@
       "OriginalItemSpec": "wwwroot\\images\\lata-de-lixo.png"
     },
     {
+      "Identity": "C:\\Users\\rebec\\source\\repos\\Livraria\\Livraria\\wwwroot\\images\\lendo-um-livro.png",
+      "SourceId": "Livraria",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\rebec\\source\\repos\\Livraria\\Livraria\\wwwroot\\",
+      "BasePath": "_content/Livraria",
+      "RelativePath": "images/lendo-um-livro.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\lendo-um-livro.png"
+    },
+    {
       "Identity": "C:\\Users\\rebec\\source\\repos\\Livraria\\Livraria\\wwwroot\\images\\mapas-e-bandeiras.png",
       "SourceId": "Livraria",
       "SourceType": "Discovered",
@@ -338,6 +389,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\o-email.png"
+    },
+    {
+      "Identity": "C:\\Users\\rebec\\source\\repos\\Livraria\\Livraria\\wwwroot\\images\\pilha-de-livros.png",
+      "SourceId": "Livraria",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\rebec\\source\\repos\\Livraria\\Livraria\\wwwroot\\",
+      "BasePath": "_content/Livraria",
+      "RelativePath": "images/pilha-de-livros.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\pilha-de-livros.png"
     },
     {
       "Identity": "C:\\Users\\rebec\\source\\repos\\Livraria\\Livraria\\wwwroot\\js\\site.js",
@@ -1324,6 +1392,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\rebec\\source\\repos\\Livraria\\Livraria\\wwwroot\\reports\\LivrosCategoria.frx",
+      "SourceId": "Livraria",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\rebec\\source\\repos\\Livraria\\Livraria\\wwwroot\\",
+      "BasePath": "_content/Livraria",
+      "RelativePath": "reports/LivrosCategoria.frx",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\LivrosCategoria.frx"
     }
   ]
 }

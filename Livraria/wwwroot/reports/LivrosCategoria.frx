@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="05/11/2023 16:00:05" ReportInfo.Modified="05/11/2023 16:29:43" ReportInfo.CreatorVersion="2023.2.0.0">
+  <Dictionary>
+    <MsSqlDataConnection Name="Connection" ConnectionString="rijcmlqCLb+83fuJjMg02WpALrhktK6lVHd3WR8elQHqEFKEbvgvCq5j6x65fhnU6YXGjTlxh6E03Q2e7Fb04aNCtxK/nYR/Vf2O9/v0KckNW6dfshpfCVHD4VEN1PVvrB9wS3/QrPmGHYvF9Vg/lMC0WvldV2bUKAY+LgtiJWxiLKtxxZkwx5gVbWsgSVhJE4Pk11jN5CirZLTb8b/A0th8hdugQ==">
+      <TableDataSource Name="Categorias" DataType="System.Int32" Enabled="true" TableName="Categorias">
+        <Column Name="CategoriaId" DataType="System.Int32"/>
+        <Column Name="CategoriaNome" DataType="System.String"/>
+        <Column Name="Descricao" DataType="System.String"/>
+      </TableDataSource>
+      <TableDataSource Name="Livros" DataType="System.Int32" Enabled="true" TableName="Livros">
+        <Column Name="LivroId" DataType="System.Int32"/>
+        <Column Name="Nome" DataType="System.String"/>
+        <Column Name="Autor" DataType="System.String"/>
+        <Column Name="LongaDescricao" DataType="System.String"/>
+        <Column Name="Preco" DataType="System.Decimal"/>
+        <Column Name="ImagemUrl" DataType="System.String"/>
+        <Column Name="ImagemMiniUrl" DataType="System.String"/>
+        <Column Name="LivroFavorito" DataType="System.Boolean" BindableControl="CheckBox"/>
+        <Column Name="Disponivel" DataType="System.Boolean" BindableControl="CheckBox"/>
+        <Column Name="CategoriaId" DataType="System.Int32"/>
+      </TableDataSource>
+    </MsSqlDataConnection>
+    <Relation Name="Categorias_Livros" ParentDataSource="Categorias" ChildDataSource="Livros" ParentColumns="CategoriaId" ChildColumns="CategoriaId" Enabled="true"/>
+  </Dictionary>
+  <ReportPage Name="Page1" Watermark.Font="Arial, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="37.8">
+      <TextObject Name="Text12" Left="264.6" Top="9.45" Width="189" Height="18.9" Text="Livros por Categoria" Font="Arial, 12pt, style=Bold"/>
+    </ReportTitleBand>
+    <DataBand Name="Data1" Top="41.8" Width="718.2" Height="75.6" Fill.Color="LightGreen" StartNewPage="true" DataSource="Categorias">
+      <TextObject Name="Text1" Top="18.9" Width="245.7" Height="18.9" Text="[Categorias.CategoriaNome]" Font="Arial, 12pt, style=Bold"/>
+      <DataBand Name="Data2" Top="163.2" Width="718.2" Height="226.8" DataSource="Livros">
+        <TextObject Name="Text3" Top="9.45" Width="151.2" Height="85.05" Text="[Livros.Nome]" HorzAlign="Center" Font="Arial, 10pt"/>
+        <TextObject Name="Text7" Left="264.6" Top="9.45" Width="189" Height="198.45" Text="[Livros.LongaDescricao]" HorzAlign="Justify" Font="Arial, 10pt"/>
+        <TextObject Name="Text9" Left="463.05" Top="9.45" Width="103.95" Height="37.8" Text="[Livros.Preco]" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Center" WordWrap="false" Font="Arial, 10pt" Trimming="EllipsisCharacter"/>
+        <PictureObject Name="Picture1" Left="576.45" Width="132.3" Height="132.3" DataColumn="Livros.ImagemUrl"/>
+        <TextObject Name="Text11" Left="160.65" Top="9.45" Width="94.5" Height="85.05" Text="[Livros.Autor]" HorzAlign="Center" Font="Arial, 10pt"/>
+        <DataHeaderBand Name="DataHeader1" Top="121.4" Width="718.2" Height="37.8" Fill.Color="Beige">
+          <TextObject Name="Text4" Width="151.2" Height="18.9" Text="Nome" HorzAlign="Center" Font="Arial, 10pt"/>
+          <TextObject Name="Text8" Left="264.6" Width="189" Height="18.9" Text="Descrição" HorzAlign="Center" Font="Arial, 10pt"/>
+          <TextObject Name="Text10" Left="463.05" Top="9.45" Width="103.95" Height="18.9" Text="Preço" HorzAlign="Center" Font="Arial, 10pt"/>
+          <TextObject Name="Text5" Left="160.65" Width="94.5" Height="18.9" Text="Autor" HorzAlign="Center" Font="Arial, 10pt"/>
+        </DataHeaderBand>
+      </DataBand>
+    </DataBand>
+  </ReportPage>
+</Report>

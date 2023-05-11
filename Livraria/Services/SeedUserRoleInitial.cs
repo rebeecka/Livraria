@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Livraria.Services;
+using Microsoft.AspNetCore.Identity;
 
 namespace Livraria.Services
 {
@@ -45,7 +46,7 @@ namespace Livraria.Services
                 user.LockoutEnabled = false;
                 user.SecurityStamp = Guid.NewGuid().ToString();
 
-                IdentityResult result = _userManager.CreateAsync(user, "Testando@2023").Result;
+                IdentityResult result = _userManager.CreateAsync(user, "Senha@2023").Result;
 
                 if (result.Succeeded)
                 {
@@ -64,7 +65,7 @@ namespace Livraria.Services
                 user.LockoutEnabled = false;
                 user.SecurityStamp = Guid.NewGuid().ToString();
 
-                IdentityResult result = _userManager.CreateAsync(user, "Testando@2023").Result;
+                IdentityResult result = _userManager.CreateAsync(user, "Senha@2023").Result;
 
                 if (result.Succeeded)
                 {

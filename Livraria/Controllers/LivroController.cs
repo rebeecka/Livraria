@@ -22,7 +22,7 @@ namespace Livraria.Controllers
             if (string.IsNullOrEmpty(categoria))
             {
                 livros = _livroRepository.Livros.OrderBy(l => l.LivroId);
-                categoriaAtual = "Todos os produtos";
+                categoriaAtual = "Todos os livros";
             }
             else
             {
@@ -51,16 +51,16 @@ namespace Livraria.Controllers
             if (string.IsNullOrEmpty(searchString))
             {
                 livros = _livroRepository.Livros.OrderBy(p => p.LivroId);
-                categoriaAtual = "Todos os produtos";
+                categoriaAtual = "Todos os livros";
             }
             else
             {
                 livros = _livroRepository.Livros
                     .Where(p => p.Nome.ToLower().Contains(searchString.ToLower()));
                 if (livros.Any())
-                    categoriaAtual = "Produtos";
+                    categoriaAtual = "Livros";
                 else
-                    categoriaAtual = "Nenhum produto foi encontrado";
+                    categoriaAtual = "Nenhum livro foi encontrado";
             }
             return View("~/Views/Livro/List.cshtml", new LivroListViewModel
             {

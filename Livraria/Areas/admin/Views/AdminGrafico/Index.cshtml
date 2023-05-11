@@ -34,7 +34,7 @@
             ['Livro', 'Quantidade', 'Valores(R$)']
         ];
         $.each(data, function (i, item) {
-            dataArray.push([item.LivroNome,item.LivrosQuantidade, item.LivrosValorTotal]);
+            dataArray.push([item.livroNome,item.livrosQuantidade, item.livrosValorTotal]);
         });
         var data = google.visualization.arrayToDataTable(dataArray);
         var options = {
